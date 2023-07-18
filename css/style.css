@@ -1,0 +1,659 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Quicksand&family=Roboto:ital,wght@1,300&display=swap');
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TIPOGRAFÍA */
+
+/* font-family: 'Playfair Display', serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* COLORES */
+
+/* NAVEGADOR */
+
+.navegador {
+    width: 100%;
+    height: 2.5rem;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegador div img {
+    height: 1.875rem;
+    width: 6.25rem;
+    margin-left: 1.25rem;
+}
+
+.nav-secciones ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    list-style-type: none;
+    padding: 1.25rem;
+}
+
+.nav-secciones ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: .875rem;
+    font-weight: 200;
+}
+.navegador-boostrap-contacto{
+    display: none;
+}
+.navegador-boostrap-actividades{
+    display: none;
+}
+
+/* HOME */
+
+.home {
+    background-image: url(../assets/img/hotel-home.jpg.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home div {
+height: 80%;
+width: 70%;
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: center;
+gap: .625rem;
+padding: 2.5rem;
+}
+
+.main-home div {
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-color: black;
+}
+
+.main-home div h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 4.0625rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px black;
+    
+}
+
+.main-home div p {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.875rem;
+    font-weight: 400;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px black;
+}
+
+/* HABITACIONES */
+.rooms-title{
+    display: flex;
+    width: 100%;
+    height: 15.625rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.rooms-title div{
+    width: 60%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    padding: .9375rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+.rooms-title div h2{
+    font-family: 'Quicksand', sans-serif ;
+    font-size: 1.875rem;
+    color: black;
+    font-weight: 900;
+}
+.rooms-title div p{
+    font-family:'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: black;
+    font-weight: 400;
+}
+.grid-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "hab1 hab2 hab3"
+    "hab4 hab5 hab6"
+    ;
+    gap: 2.5rem;
+    padding: 40px;
+
+}
+.habitacion1{
+    grid-area: hab1;
+}
+.habitacion2{
+    grid-area: hab2;
+}
+.habitacion3{
+    grid-area: hab3;
+}
+.habitacion4{
+    grid-area: hab4;
+}
+.habitacion5{
+    grid-area: hab5;
+}
+.habitacion6{
+    grid-area: hab6;
+}
+.cards-room{
+    height: 650px;
+    width: auto;
+    padding-bottom: .625rem;
+    overflow: hidden;
+    background-color: rgb(250, 250, 250);
+    border-bottom: solid black 0.02rem;
+}
+.cards-room img{
+    height: 60%;
+    width: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+.cards-room img:hover{
+    transform: scale(1.1);
+}
+.sub-cards{
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    margin-top: 1.25rem;
+    padding-left: .625rem;
+}
+.sub-cards div{
+    display: flex;
+    flex-direction: row;
+    gap: .625rem;
+}
+.sub-cards div img{
+    height: 24px;
+    width: 24px;
+}
+.cards-room h3{
+    font-size: 1.25rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    padding-left: .3125rem;
+}
+.cards-room p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+.button-rooms{
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    justify-content: center;
+    padding-top: .9375rem;
+}
+.button{
+    height: 60px;
+    width: 45%;
+    background-color: black;
+    color: white;
+    font-size: .9375rem;
+    font-weight: 600;
+}
+.button:nth-child(2){
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+/* GASTRONOMIA */
+.gastronomia-title{
+    display: flex;
+    width: 100%;
+    height: 15.625rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.gastronomia-title div{
+    width: 60%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    padding: .9375rem;
+    align-items: center;
+    justify-content: center;
+}
+.gastronomia-title div h2{
+    font-family: 'Quicksand', sans-serif ;
+    font-size: 1.875rem;
+    color: black;
+    font-weight: 900;
+}
+.gastronomia-title div p{
+    font-family:'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: black;
+    font-weight: 400;
+}
+.grids-gastronomia{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "rest1 rest2"
+    "rest3 rest4"
+    ;
+    padding: 0px 40px 60px 40px;
+    gap: 40px;
+}
+.restaurante1{
+    grid-area: rest1;
+}
+.restaurante2{
+    grid-area: rest2;
+}
+.restaurante3{
+    grid-area: rest3;
+}
+.restaurante4{
+    grid-area: rest4;
+}
+.cards-gastronomia{
+    height: 650px;
+    width: auto;
+    /* border: 1px black solid; */
+    overflow: hidden;
+    background-color: rgb(250, 250, 250);
+    border-bottom: solid black 0.02rem;
+}
+.cards-gastronomia img{
+    height: 70%;
+    width: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+.cards-gastronomia img:hover{
+    transform: scale(1.1);
+}
+.subcards-gastronomia{
+    display: flex;
+    flex-direction: column;
+    gap:.625rem;
+    padding-top: .625rem;
+    padding-left: 1.25rem;
+}
+.subcards-gastronomia h3{
+    font-size: 1.25rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    padding-left: .3125rem;
+}
+.subcards-gastronomia p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+/* ACTIVIDADES */
+.actividades-title{
+    display: flex;
+    width: 100%;
+    height: 15.625rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.actividades-title div{
+    width: 60%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    padding: .9375rem;
+    align-items: center;
+    justify-content: center;
+}
+.actividades-title div h2{
+    font-family: 'Quicksand', sans-serif ;
+    font-size: 1.875rem;
+    color: black;
+    font-weight: 900;
+}
+.actividades-title div p{
+    font-family:'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: black;
+    font-weight: 400;
+}
+.grids-actividades{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "act1 act2 act3"
+    "act4 act5 act6"
+    ;
+    gap: 2.5rem;
+    padding: 30px;
+
+}
+.actividad1{
+    grid-area: act1;
+}
+.actividad2{
+    grid-area: act2;
+}
+.actividad3{
+    grid-area: act3;
+}
+.actividad4{
+    grid-area: act4;
+}
+.actividad5{
+    grid-area: act5;
+}
+.actividad6{
+    grid-area: act6;
+}
+.cards-actividades{
+    height: 500px;
+    width: auto;
+    padding-bottom: .625rem;
+    overflow: hidden;
+    background-color: rgb(250, 250, 250);
+    border-bottom: solid black 0.02rem;
+}
+.cards-actividades img{
+    height: 65%;
+    width: 100%;
+    transition: 0.5s;
+    object-fit: cover;
+}
+.cards-actividades img:hover{
+    transform: scale(1.1);
+}
+.subcards-actividades{
+    display: flex;
+    flex-direction: column;
+    gap:.625rem;
+    padding-top: .625rem;
+    padding-left: 1.25rem;
+}
+.subcards-actividades h3{
+    font-size: 1.25rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    padding-left: .3125rem;
+}
+.subcards-actividades p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+.div-button-act{
+    padding-left: 1.25rem;
+    padding-top: .625rem;
+}
+.button-act{
+    color: white;
+    background-color: black;
+    font-size: .9375rem;
+    font-weight: 600;
+    height: 50px;
+    width: 60%;
+}
+
+
+/* CONTACTO */
+.body-contacto{
+    background-color: black;
+}
+.titulo-contacto{
+    display: grid;
+    place-items: center;
+    margin: 3.75rem 0rem;
+}
+.titulo-contacto div{
+    width: 40%;
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    gap: .625rem;
+    padding: .9375rem;
+    align-items: center;
+    justify-content: center;
+}
+.titulo-contacto h2{
+    font-family: 'Quicksand', sans-serif ;
+    font-size: 1.875rem;
+    color: black;
+    font-weight: 900;
+    color: white;
+}
+.flex-contacto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.875rem;
+    padding: 1.875rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 31.25rem;
+    width: 31.25rem;
+    border: 1px rgb(255, 255, 255) solid;
+    border-radius: .3125rem;
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 300;
+}
+.subcard-contacto{
+    display: flex;
+    gap: .625rem;
+}
+.img-contacto{
+    display: grid;
+    place-content: center;
+}
+.img-contacto img{
+    margin: 20px;
+    height: 200px;
+    width: 500px;
+}
+.contacto-bottom{
+    border-bottom: white 1px solid;
+}
+.contacto-top{
+    border-top: white 1px solid;
+}
+/* FOOTER */
+
+footer{
+    height: 15.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    background-color: black;
+    color: white;
+}
+footer div h2{
+    font-size: 1.875rem;
+    font-family: 'Playfair Display', serif;
+}
+.footer-text{
+    font-size: .9375rem;
+    font-family: 'Roboto', sans-serif;;
+}
+.footer-svg a{
+    margin: 0% .625rem;
+
+}
+/* MEDIA QUERIS-CONTACTO*/
+@media (max-width:1024px){
+    .card-contacto{
+        width:21.875rem;
+        height: 21.875rem;
+        font-size: .9375rem ;
+        gap: 1.25rem;
+    }
+}
+@media (max-width:768px){
+    .card-contacto{
+        width:15.625rem;
+        height: 17.1875rem;
+        font-size: .625rem ;
+        gap: .9375rem;
+        padding: .625rem;
+    }
+}
+@media (max-width:660PX){
+    .flex-contacto{
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    .card-contacto{
+        width:21.875rem;
+        height: 21.875rem;
+        font-size: .9375rem ;
+        gap: 1.25rem;}
+        .contacto-bottom{
+            border-bottom:none;
+        }
+        .contacto-top{
+            border-top: none;
+        }
+        .img-contacto img{
+            margin: 10px;
+            height: 100px;
+            width: 250px;
+        }
+}
+@media (max-width:620px){
+    .navegador{
+        display: none;
+    }
+    .navegador-boostrap-contacto{
+        display: block;
+    }
+    .navegador-boostrap-contacto div img {
+        height: 2.5rem;
+        width: 120px;
+        margin-left: 1.25rem;
+    }
+}
+@media (max-width:415px){
+    .titulo-contacto div{
+        border: none;
+    }
+    .card-contacto{
+        width: auto;
+    }
+    .card-grid{
+        width: auto;
+        font-size: .5rem;
+    }
+}
+
+/* MEDIA QUERIS-ACTIVIDADES*/
+@media (min-width:1200px){
+    .cards-actividades{
+        height: 40.625rem;
+    }
+    .navegador{
+        padding-top: .625rem;
+    }
+}
+@media (max-width:1200px){
+    .grids-actividades{
+        display: grid;
+        width: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "act1 act2"
+        "act3 act4"
+        "act5 act6"
+        ;}
+        .navegador{
+            padding-top: .625rem;
+        }
+}
+@media (max-width:1170px){
+        .navegador-boostrap-actividades{
+            display: block;
+        }
+        .navegador{
+            display: none;
+        }
+        .navegador-boostrap-actividades div img {
+            height: 2.5rem;
+            width: 120px;
+            margin-left: 1.25rem;
+        }
+        .cards-actividades{
+            height: 700px;
+        }
+}
+@media (max-width:690px){
+    .grids-actividades{
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+    "act1"
+    "act2"
+    "act3"
+    "act4"
+    "act5"
+    "act6"
+    ;}
+}
+@media (max-width:634PX){
+    .grids-actividades{
+        height: auto;
+        gap: .625rem;
+    }
+    .cards-actividades{
+        border-bottom: none;
+        height: 37.5rem;
+        padding-bottom: 1.25rem;
+    }
+    .actividades-title div p{
+        display: none;
+    }
+}
+@media (max-width:376px){
+    .cards-actividades{
+        border-bottom: none;
+        height: 40.625rem;
+        padding-bottom: 1.25rem;
+    }
+}
